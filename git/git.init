@@ -1,0 +1,23 @@
+initialize git:
+
+initialization:
+git init
+git add *.*
+git commit -m 'comments'
+
+clone:
+git clone <url>
+git clone <url> self_name
+
+status:
+git status
+
+git rm 
+git mv 
+git log
+git log --pretty-oneline
+
+git commit -m "comment"
+git commit --amend
+
+
