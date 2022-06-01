@@ -1,0 +1,15 @@
+git remote -v
+git checkout 
+
+git remote -v to show repository that need to read/write and url
+git fetch origin
+
+git remote show origin
+git remote rename name1 name2
+git tag
+
+userless
+
+git branch new-pointer
+create a new branch
+git checkout pointer:check to new branch
