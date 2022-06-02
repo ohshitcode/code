@@ -1,7 +1,9 @@
-main:	main.o
-	gcc -o main main.o
+main: main.o func.o
 
-main.o:main.c
-	gcc -c main.c
+	gcc  main.o func.o -o main
 
+main.o : main.c
+	gcc -c main.c -o main.o
+func.o: func.o
+	gcc -c func.c -o func.o
 

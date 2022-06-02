@@ -1,0 +1,23 @@
+main: main.o add1.o add2.o
+	gcc -o main main.o add1.o add2.o
+
+main.o:main.c
+	gcc -c main.c
+add1.o:add1.c
+	gcc -c add1.c
+add2.o:add2.c
+	gcc -c add2.c
+
+clean:
+	rm -f *.o
+
+/* simple mode */
+
+/* pattern mode */
+files=main.o a.o b.o c.o
+
+main:$(files)
+	gcc -o main $(files)
+%.o:%.c
+	gcc -c %.c
+
